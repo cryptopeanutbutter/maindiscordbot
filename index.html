@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="John Doe's space-inspired portfolio showcasing frontend and backend development expertise." />
+    <title>John Doe | Full Stack Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div id="loader" aria-hidden="true">
+        <div class="loader-content">
+            <div class="portal-ring"></div>
+            <div class="portal-core"></div>
+            <p>Initiating space jump...</p>
+        </div>
+    </div>
+
+    <canvas id="starfield" aria-hidden="true"></canvas>
+
+    <header class="hero" id="top">
+        <nav class="nav" aria-label="Main navigation">
+            <a class="logo" href="#top" aria-label="John Doe home">JD</a>
+            <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">☰</button>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero-content">
+            <div class="hero-text">
+                <span class="tagline">Exploring the cosmos of code</span>
+                <h1>John Doe</h1>
+                <h2>Full Stack Developer</h2>
+                <p>
+                    I craft immersive digital experiences that blend cutting-edge frontend artistry with
+                    resilient backend architecture.
+                </p>
+                <a class="cta" href="#projects">Explore My Work</a>
+            </div>
+            <div class="hero-visual" role="presentation">
+                <div class="orbital-wrapper">
+                    <div class="orbital"></div>
+                    <div class="orbiting-node"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="section skills" id="skills" aria-labelledby="skills-title">
+            <div class="section-heading">
+                <h2 id="skills-title">Skills Arsenal</h2>
+                <p>Building seamless experiences from pixel-perfect UIs to scalable cloud-ready APIs.</p>
+            </div>
+            <div class="skills-grid">
+                <article class="skill-card" tabindex="0">
+                    <h3>Frontend</h3>
+                    <ul>
+                        <li data-progress="95">HTML5</li>
+                        <li data-progress="92">CSS3 / SASS</li>
+                        <li data-progress="88">JavaScript (ESNext)</li>
+                        <li data-progress="85">React</li>
+                        <li data-progress="80">Web Animations</li>
+                    </ul>
+                </article>
+                <article class="skill-card" tabindex="0">
+                    <h3>Backend</h3>
+                    <ul>
+                        <li data-progress="90">Node.js</li>
+                        <li data-progress="82">Express</li>
+                        <li data-progress="78">Python</li>
+                        <li data-progress="84">PostgreSQL</li>
+                        <li data-progress="80">REST & GraphQL</li>
+                    </ul>
+                </article>
+                <article class="skill-card" tabindex="0">
+                    <h3>DevOps & Tools</h3>
+                    <ul>
+                        <li data-progress="75">Docker</li>
+                        <li data-progress="70">CI/CD</li>
+                        <li data-progress="72">AWS</li>
+                        <li data-progress="88">Git</li>
+                        <li data-progress="76">Testing & QA</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="section projects" id="projects" aria-labelledby="projects-title">
+            <div class="section-heading">
+                <h2 id="projects-title">Featured Missions</h2>
+                <p>Selected builds that highlight curiosity, precision, and relentless experimentation.</p>
+            </div>
+            <div class="projects-grid">
+                <article class="project-card" data-project="nebula" tabindex="0">
+                    <img src="https://images.unsplash.com/photo-1523475472560-d2df97ec485c?auto=format&fit=crop&w=800&q=80" alt="Screenshot of Nebula UI project" loading="lazy" />
+                    <div class="project-info">
+                        <h3>Nebula UI Kit</h3>
+                        <p>Component-driven design system with dynamic theming and realtime previews.</p>
+                    </div>
+                </article>
+                <article class="project-card" data-project="aether" tabindex="0">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80" alt="Screenshot of Aether analytics dashboard" loading="lazy" />
+                    <div class="project-info">
+                        <h3>Aether Analytics</h3>
+                        <p>Full-stack analytics platform with predictive insights and streaming dashboards.</p>
+                    </div>
+                </article>
+                <article class="project-card" data-project="quantum" tabindex="0">
+                    <img src="https://images.unsplash.com/photo-1483478550801-ceba5fe50e8e?auto=format&fit=crop&w=800&q=80" alt="Screenshot of Quantum collaboration app" loading="lazy" />
+                    <div class="project-info">
+                        <h3>Quantum Collaboration</h3>
+                        <p>Secure remote collaboration suite with encrypted messaging and AI assistance.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section about" id="about" aria-labelledby="about-title">
+            <div class="section-heading">
+                <h2 id="about-title">About the Developer</h2>
+            </div>
+            <div class="about-content">
+                <figure class="about-photo">
+                    <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=800&q=80" alt="Portrait of John Doe" loading="lazy" />
+                    <figcaption>John Doe in his natural habitat: experimenting with new tech.</figcaption>
+                </figure>
+                <div class="about-text">
+                    <p>
+                        I thrive at the intersection of aesthetics and engineering. With a background in
+                        human-centered design and scalable systems, I architect web experiences that feel alive and
+                        remain dependable under pressure.
+                    </p>
+                    <p>
+                        From crafting <strong>immersive frontends</strong> with React and Three.js to designing
+                        <strong>resilient microservices</strong> and event-driven pipelines, my work bridges the gap
+                        between concept and execution. I'm passionate about inclusive design, performance, and
+                        solving problems that matter.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section contact" id="contact" aria-labelledby="contact-title">
+            <div class="section-heading">
+                <h2 id="contact-title">Establish Contact</h2>
+                <p>Drop a message and let's launch something extraordinary.</p>
+            </div>
+            <form class="contact-form" novalidate>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" autocomplete="name" required />
+                    <span class="error" aria-live="polite"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" autocomplete="email" required />
+                    <span class="error" aria-live="polite"></span>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <span class="error" aria-live="polite"></span>
+                </div>
+                <button type="submit" class="submit-btn">Send Transmission</button>
+                <p class="form-status" role="status" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-links" aria-label="Social media">
+            <a href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub">
+                <span aria-hidden="true">GitHub</span>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">
+                <span aria-hidden="true">LinkedIn</span>
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter">
+                <span aria-hidden="true">Twitter</span>
+            </a>
+        </div>
+        <p>&copy; <span id="year"></span> John Doe. Crafted with stardust and clean code.</p>
+    </footer>
+
+    <div class="project-modal" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close project details">×</button>
+            <div class="modal-body">
+                <h3 id="modal-title"></h3>
+                <p class="modal-description"></p>
+                <ul class="modal-stack"></ul>
+                <div class="modal-links"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
